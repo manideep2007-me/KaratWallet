@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# Karatpay - A Mini Gold Wallet App 🪙
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[cite_start]This is a fully functional "Gold Wallet" mobile application built with **React Native** and the **Expo framework**, developed as a part of an internship assignment[cite: 2].
 
-## Get started
+## ✨ Features Implemented
 
-1. Install dependencies
+- [cite_start]**Complete App Setup** using Expo[cite: 4].
+- [cite_start]**User Authentication:** Simple dummy login screen with navigation to the dashboard on success[cite: 6, 7].
+- [cite_start]**Dashboard:** Displays the user's Gold & Cash balances and has buttons to navigate to the Buy and Transfer screens[cite: 8, 9, 10].
+- [cite_start]**Buy Gold:** Functionality to buy digital gold with INR, assuming a hardcoded price of ₹10,000/gram[cite: 11, 12, 13].
+- [cite_start]**Transfer Gold:** Functionality to transfer gold to other users by checking for sufficient balance[cite: 14, 15].
 
-   ```bash
-   npm install
-   ```
+### Extra (Optional) Features Implemented
+- [cite_start]**✅ Persistent Storage:** Wallet balances and login state are saved persistently on the device using **AsyncStorage**[cite: 17].
+- [cite_start]**✅ Transaction History:** The dashboard displays a list of all buy and transfer transaction records[cite: 18].
+- **✅ Professional Dark UI:** The app features a custom-designed dark blue and gold theme with professional fonts for a clean and vibrant user experience.
 
-2. Start the app
+## 🛠️ Tech Stack
 
-   ```bash
-   npx expo start
-   ```
+- **Framework:** React Native with Expo (Router)
+- **State Management:** React Context API
+- **Local Storage:** AsyncStorage
+- **Fonts:** Montserrat, Poppins, Inter
+- **UI & Styling:** React Native StyleSheet
 
-In the output, you'll find options to open the app in a
+## 🚀 How to Run the Project
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/manideep2007-me/KaratWallet.git](https://github.com/manideep2007-me/KaratWallet.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd KaratWallet
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Start the Expo server:**
+    (For best results, use the `--clear` flag the first time)
+    ```bash
+    npx expo start --clear
+    ```
+5.  **Scan the QR code with the Expo Go app on your iOS or Android device.**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📝 Code & State Management
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [cite_start]**Code Structure:** The code is organized with a root `context` folder for state management and an `app` directory for file-based routing with Expo Router, ensuring readability[cite: 22].
+- [cite_start]**State Management:** A centralized state management solution is implemented using React Context to handle the wallet's global state (balances, transactions, login status) efficiently[cite: 24].
